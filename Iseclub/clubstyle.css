@@ -1,0 +1,371 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(201, 230, 223);
+}
+
+/*header section */
+
+.header{
+    background-color: rgb(58, 111, 180);
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+    padding-right:30px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding-left: 70px;
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(201, 230, 223) ;
+    display: block;
+    margin:auto;
+    transition:0.5s;
+   
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+
+/*slide-show*/
+
+.slideshow{
+     
+    width:1200px;
+    height: 500px;
+    overflow:hidden;
+    position: relative;
+    top: 50px;
+    left: 200px;
+   
+    
+
+}
+
+.navigation{
+    position:absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.bar{
+    width:50px;
+    height:10px;
+    border:3px solid antiquewhite;
+    margin: 6px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.bar:hover{
+    background: antiquewhite;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width:500%;
+    height:100%;
+    display:flex;
+}
+
+.slide{
+    width:20%;
+    transition: 0.5s;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+ 
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+ 
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+ 
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+ 
+ 
+/*about us and events*/
+
+.aboutus, .events, .contact-us{
+    margin-top: 80px;
+    margin-left:80px;
+    text-align: left;
+   
+}
+
+
+
+.aboutus-title, .events-title, .contact-title{
+    display:inline-block;
+    font-size:25px;
+}   
+
+.line{
+    vertical-align: middle;
+    display:inline-block;
+    margin-left: 20px;
+    border-top: 3px solid black;
+    width: 1150px;
+}
+
+.aboutus-horizontal2{
+    margin-top:50px;
+    text-align: left;
+}
+
+.aboutis{
+    display:inline-block;
+    width:800px;
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: left;
+    
+    
+}
+
+.aboutis p{
+    padding:10px;
+    font-size:18px;
+    width:700px;
+    line-height: 28px;
+}
+
+.aboutis-image{
+   
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.aboutis-image img{
+    margin-left: 5px;
+    width:450px;
+    height:210px;
+    object-fit: cover;
+}
+
+
+
+.faculty-table{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+
+
+table{
+    width:1000px;
+    height:250px;
+}
+
+table caption{
+
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding:8px;
+}
+
+/*events*/
+
+.events-row{
+    margin-top: 30px;
+    margin-left: 35px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 30px;
+    row-gap: 30px;
+  
+}
+
+.events-columncloud, .events-columnaiml, .events-columnblockchain, .events-columnculture ,.events-columnvr, .events-columnhackathon{
+   height: 350px;
+   border-radius: 10px;
+   background-color: blueviolet;
+   text-align: center;
+   padding-top: 50px;
+   cursor: pointer;
+   transition:0.5s;
+}
+
+.events-columncloud{
+    color: antiquewhite;
+    background-image: url(https://analyticsinsight.b-cdn.net/wp-content/uploads/2021/01/Cloud-Computing-1024x576.jpg);
+    background-size: cover;
+}
+.events-columnaiml{
+    color: antiquewhite;
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/B5EEA99B-9A70-44CC-B41AFC2EF100377A.jpg);
+    background-size: cover;
+   
+}   
+
+.events-columnculture{
+    color: antiquewhite;
+    background-image: url(images/culturalevent.jpg);
+    background-size: cover;
+}   
+
+.events-columnvr{
+    color: antiquewhite;
+    background-image: url(images/virtualrealityjpg.jpg);
+    background-size: cover;
+}    
+.events-columnblockchain{
+    color: antiquewhite;
+    background-image: url(https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202106/MIT-Algorand-01_0.jpg?itok=kc8Jm3nW);
+    background-size: cover;
+}   
+.events-columnhackathon{
+    color: antiquewhite;
+    background-image: url(images/blockchain.png);
+    background-size: cover;
+    margin-bottom: 10px;;
+}  
+    
+.register-button{
+    margin-top:40px;
+    width: 120px;
+    height: 50px;
+    border:none;
+    background-color: rgb(38, 65, 78);
+    font-weight: 500;
+    color: antiquewhite;
+    cursor:pointer;
+    transition: 0.5s;
+ 
+    
+}
+
+.register-button:hover{
+    width:150px;
+    height: 55px;
+    
+   
+}
+
+/*footer*/
+
+
+
+
+.contact-horizontal2{
+   
+    margin-left: 50px;
+    margin-top: 70px;
+    
+}
+
+.map{
+    
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+.contact{
+    vertical-align: top;
+    display: inline-block;
+    width:500px;
+}
+
+/*Registration*/
+
+.register{
+    display: flex;
+    align-items: top;
+  
+}
+
+.signup{
+    display: inline-block;
+}
+
+.signup img{
+
+    height: 1400px;
+    width: 700px;
+    object-fit: fill;
+  
+
+}
+
+.signup-form{
+    
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 800px;
+    border: 2px solid black;
+   
+}
+
+h4{
+    font-size:23px;
+}
+
+.form{
+    padding-left: 40px;
+
+}
+

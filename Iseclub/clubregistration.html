@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>ISE-Registration</title>
+    <link rel="stylesheet" href="clubstyle.css">
+</head>
+<body>
+    <div class="register"> 
+        <div class="signup"><img src="images/register.jpg"></div>
+          
+        <div class="signup-form">
+            <div><h1>Sign Up!!</h1></div> <br><br><br>
+            <div class="form">
+                <form>
+                    <input type="text" value="First Name" style="width: 300px; height:40px; padding-left: 3px;"> &emsp; &emsp; <input type="text" value="Last Name" style="width: 300px; height:40px; padding-left: 3px;">
+                    <br><br>
+                    <h4>Date of Birth:</h4><br> <input type="date" style="width: 300px; height:40px; padding-left: 3px;">
+                    <br><br>
+                    <h4>Gender:</h4> <br> <input type="radio" name="gender" value="Male"> Male    
+                    <input type="radio" name="gender" value="Female"> Female
+                    <br><br>
+                    <h4>Phone number:</h4> <br><input type="text" value="phone" style="width: 300px; height:40px; padding-left: 3px;">
+                    <br><br>
+                    <h4>Email ID:</h4> <br> <input type="email" value="email address" style="width: 300px; height:40px; padding-left: 3px;">
+                    <br><br>
+                    <h4>Address:</h4> <br> <textarea rows="5" cols="100" ></textarea>
+                    <br><br>
+                    <h4>Designation:</h4> <br>
+                    <select style="width: 300px; height:40px; padding-left: 3px;">
+                        <option value=""> Select your designation</option>
+                        <option value="Head of department" >Head of department</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Assisstant Professor">Assisstant Professor</option>
+                        <option value="Lab Instructor">Lab Instructor</option>
+                        <option value="Student">Student</option>
+                    </select>
+                    <br><br>
+                    <h4>Choose an event:</h4> <br>
+                    <select style="width: 300px; height:40px; padding-left: 3px;">
+                        <option value=""> Choose an event</option>
+                        <option value="Cloud computing" >Cloud computingt</option>
+                        <option value="Virtual reality">Virtual reality</option>
+                        <option value="Blockchain">Blockchain</option>
+                        <option value="AI ML">AI ML</option>
+                        <option value="Hackathon">Hackathon</option>
+                        <option value="Cultural events">Cultural events</option>
+                    </select>
+                    <br><br>
+                    <h4>Reason to Join:</h4>  <br>  <textarea rows="5" cols="100" ></textarea> 
+                    <br>
+                    <button  class="register-button" type="submit" onclick="alert('Congratulations!! Your Registration is complete')">Submit</button>
+                    <button  class="register-button" type="submit" onclick="alert('Reset Successful')">Reset</button>
+                </form>
+            
+            
+            </div>
+                
+
+            </div>
+
+    </div>
+    
+    
+</body>
+</html>
